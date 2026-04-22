@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="cars.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1 style="border: solid black 2px; display: inline-block;">Vintage Cars</h1><br>
+    <p style="border: solid black 2px; display: inline;">Guess which car belongs to which make?</p><br>
+    <div id="car-info">
+      <h2 style="border: solid black; display: block;"><span id="car-name"></span> (<span id="car-type"> </span>)</h2>
+      <img class="hidden" id="car-img" src="images/Audi.jpg" alt="super cute car" />
+    </div>
+    <div id="guess-ui">
+      Make:
+      <select id="make-list">
+      </select>
+      <button class="disabled" id="guess-btn">Guess!</button>
+    </div>
+    <div>
+      <p>Correct guesses: <span id="correct">0</span></p>
+      <p>Total guesses: <span id="total">0</span></p>
+    </div>
+    <script src="cars.js"></script>
+  </body>
+</html>

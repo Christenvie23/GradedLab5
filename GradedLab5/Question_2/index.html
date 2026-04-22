@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="cars.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Mr. Surname Blender</h1>
+    <div>
+        <span style="border: solid black 2px;">Surname:</span>
+        <input id="surname" type="text" size="20" />
+    </div>
+    <div>
+        <span>Font:</span>
+        <select id="font">
+            <option>Arial</option>
+            <option>Comic Sans MS</option>
+            <option>Times New Roman</option>
+        </select>
+    </div>
+    <div>
+        <span>Position:</span>
+        <input id="sequential" surname="pos" type="radio" value="seq" checked="checked" />Sequential
+        <input id="random" surname="pos" type="radio" value="rand" /> Random
+        <input id="reverse" surname="pos" type="radio" value="rev" /> Reverse
+    </div> 
+    <div>
+        <label for="go">Go: </label>
+        <button id="blend">Blend Now</button>
+    </div>
+    <div id="output"></div>
+    <script src="index.js"></script>
+</body>
+</html>
